@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="contenedor">
     <?php
         $idioma = "es";
         $estudios_es = "He estudiado un grado medio y también un grado superior.";
@@ -17,9 +19,10 @@
         $idiomas_va = "Parle espanyol, valencià i anglés.";
         $idiomas_en = "I speak spanish, valencian and english.";
         $idiomas = "idiomas_" . $idioma;
-    ?>  
+    ?>
 
-<p><?php echo $$estudios; ?></p> </br>
-<p><?php echo $$idiomas; ?></p>
+    <p><?php echo $$estudios; ?></p>
+    <p><?php echo $$idiomas; ?></p>
+</div>
 </body>
 </html>

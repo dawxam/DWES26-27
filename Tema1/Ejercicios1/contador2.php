@@ -9,17 +9,17 @@
 <body>
     <h2>Contadores</h2>
     <div id="contenedor">
-        <p>Este contador va del 0 al 100:</p><br>
+        <p>Este contador va del 0 al 100:</p>
 
-        <p><?php
+        <p class="parrafo"><?php
             for ($i = 0; $i < 100; $i++) {
                 echo $i . ",";
             }
         ?></p>
 
-        <p>Este otro va del 10 al 0</p><br>
+        <p>Este otro va del 10 al 0</p>
 
-        <p><?php
+        <p class="parrafo"><?php
             $j = 11;
 
             while ($j >= 0) {
