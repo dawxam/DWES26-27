@@ -35,3 +35,4 @@
 
 
 # Ejercicio 13
+<img width="986" height="405" alt="image" src="https://github.com/user-attachments/assets/14c0b313-b93e-4030-bf22-9147326c8d4c" />
