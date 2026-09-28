@@ -9,6 +9,7 @@
 <body>
     <div id="contenedor">
         <?php
+            echo "<h1>Contando del 10 al 20</h1>";
             function conteo($a, $b) {
                 for ($i = $a; $i <= $b; $i++) { 
                     echo $i . ", ";
