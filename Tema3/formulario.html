@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="contenedor">
+    <form class="row g-3" method="post" action="formulario.php">
+        <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+        </div>
+        <div class="col-md-6">
+            <label for="apellidos" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="apellidos" name="apellidos">
+        </div>
+        <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email">    
+        </div>
+        <div class="col-md-6">
+            <label for="url" class="form-label">URL Página personal</label>
+            <input type="text" class="form-control" id="url" name="url">
+        </div>
+        <div class="col-md-6">
+            <label for="convivientes" class="form-label">Número de convivientes</label>
+            <input type="number" class="form-control" id="convivientes" name="convivientes">
+        </div>
+        <div class="col-md-6">
+            <label for="menu" class="form-label">Elige tu menú favorito</label>
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelect" name="menu" aria-label="Floating label select example">
+                    <option value="menu1">Menu 1</option>
+                    <option value="menu2">Menu 2</option>
+                    <option value="menu3">Menu 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="sexo" id="hombre" value="Hombre" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="hombre">Hombre</label>
+
+                <input type="radio" class="btn-check" name="sexo" id="mujer" value="Mujer" autocomplete="off">
+                <label class="btn btn-outline-primary" for="mujer">Mujer</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="aficion1" name="aficiones[]" value="Jugar" autocomplete="off">
+                <label class="btn btn-outline-primary" for="aficion1">Jugar</label>
+
+                <input type="checkbox" class="btn-check" id="aficion2" name="aficiones[]" value="Estudiar PHP" autocomplete="off">
+                <label class="btn btn-outline-primary" for="aficion2">Estudiar PHP</label>
+
+                <input type="checkbox" class="btn-check" id="aficion3" name="aficiones[]" value="Matarme" autocomplete="off">
+                <label class="btn btn-outline-primary" for="aficion3">Matarme</label>
+
+                <input type="checkbox" class="btn-check" id="aficion4" name="aficiones[]" value="Viajar" autocomplete="off">
+                <label class="btn btn-outline-primary" for="aficion4">Viajar</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <input type="submit" class="btn btn-primary">
+        </div>
+    </form>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
