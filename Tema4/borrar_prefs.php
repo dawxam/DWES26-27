@@ -1,6 +1,6 @@
 <?php
     if (isset($_COOKIE['color'])) {
-        setcookie('color', '', time() - 3600, '/');
+        setcookie('color', '', time() - 1);
         unset($_COOKIE['color']);
     }
 
